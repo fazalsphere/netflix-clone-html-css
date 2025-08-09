@@ -35,13 +35,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     max-width: 60vw;
-    height: 62px;
+    height: 100px;
     margin: auto;
 }
 
 nav img {
     color: red;
-    width: 114px;
+    width: 133px;
     position: relative;
     z-index: 10;
 }
@@ -55,7 +55,7 @@ nav button {
 .hero {
     font-family: "Martel Sans", sans-serif;
     font-style: normal;
-    height: calc(100% - 62px);
+    height: calc(100% - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,8 @@ nav button {
 
 .separation {
     height: 7px;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(53, 53, 53);
+    z-index: 10;
 }
 
 .first {
@@ -222,4 +223,33 @@ nav button {
     justify-content: space-between;
     cursor: pointer;
     
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .contact {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
 }
