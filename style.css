@@ -181,3 +181,16 @@ nav button {
 .first > div :nth-child(2){
     font-size: 24px;
 }
+
+.second {
+    height: 30vw;
+}
+
+.kids-image {
+    top: 60px;
+    right: 70px;
+}
+
+.four {
+    height: 80vh;
+}
