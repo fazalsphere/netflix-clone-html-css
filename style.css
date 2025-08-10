@@ -9,7 +9,7 @@
 
 body {
     background-color: black;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 .main {
@@ -152,48 +152,51 @@ nav button {
     color: white;
 }
 
+
+
 .secimg {
     position: relative;
 }
 
 .secimg img {
-    width: 30vw;
+    width: 590px;
     position: relative;
     z-index: 10;
 }
 
 .secimg video {
     position: absolute;
-    top: 52px;
-    left: 79px;
-    width: 22vw;
-    height: 20vw;
+    top: 148px;
+    left: 75px;
+    width: 349px;
 }
 
-.first > div {
+.first>div {
     display: flex;
     flex-direction: column;
+    padding: 34px 0;
 }
 
-.first > div :nth-child(1){
+.first>div :nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
 }
-.first > div :nth-child(2){
+
+.first>div :nth-child(2) {
     font-size: 24px;
 }
 
 .second {
-    height: 30vw;
+    /* height: 30vw; */
 }
 
 .kids-image {
-    top: 60px;
-    right: 70px;
+    /* top: 60px;
+    right: 70px; */
 }
 
 .four {
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .faq {
@@ -207,12 +210,14 @@ nav button {
     font-size: 48px;
 }
 
-.faq-box svg{
+.faq-box svg {
     filter: invert(1);
 }
-.faq-box:hover{
+
+.faq-box:hover {
     background-color: gray;
 }
+
 .faq-box {
     display: flex;
     background-color: rgb(71, 71, 71);
@@ -222,7 +227,7 @@ nav button {
     margin: 34px auto;
     justify-content: space-between;
     cursor: pointer;
-    
+
 }
 
 footer {
@@ -252,4 +257,36 @@ footer .contact {
 .footer a {
     font-size: 14px;
     color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secimg img {
+        width: 305px;
+    }
+
+    .secimg video {
+        width: 305px;
+    }
+
+    .hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+}
+}
+
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
+
 }
